@@ -87,13 +87,3 @@ print(f"Cool {my_float} squared is {float_square}, or is it ?")
 a = int(my_float) # so a became an integer # we could also use float(a) if we want floats
 double_a = a * 2
 print(f"Cool {a} doubled is {double_a}, or is it ?")
-
-username = input("What is your name?")
-print(f"{username}, you have a nice name!")
-age = int(input(f"{username}, how old are you?"))
-target_age = 65
-birthday = target_age - age
-print(f"{age} years old! Nice! After {birthday} years you will be {target_age} years old :)")
-currentYear = datetime.datetime.now().year  # you could write it by hand here 2021, but better to get it automatically
-year = currentYear + birthday
-print(f"You will be {target_age} in year: {year}")
