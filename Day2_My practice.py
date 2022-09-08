@@ -87,3 +87,16 @@ print(f"Cool {my_float} squared is {float_square}, or is it ?")
 a = int(my_float) # so a became an integer # we could also use float(a) if we want floats
 double_a = a * 2
 print(f"Cool {a} doubled is {double_a}, or is it ?")
+
+
+#More info on data types 
+# Python built_in funcions 
+# So https://docs.python.org/3/library/functions.html 
+# these are all built in functions that are always available (no import needed)
+
+# you should not name your variables the same as name of built-in functions 
+
+# Python list reserved keywords that you are not allowed to use as variables 
+# https://docs.python.org/3/reference/lexical_analysis.html#keywords
+
+
