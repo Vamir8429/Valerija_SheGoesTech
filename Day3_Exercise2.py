@@ -14,6 +14,6 @@
 s = float(input("What is your monthly salary? t!"))
 y = int(input("How many years you have worked at this company? y!"))
 if y >= 2:
-    print(int(s * 0.15 * y))
+    print(int(s * 0.15 * (y-2)))
 else:
     print("Unfortunately, no bonus for you :(")
