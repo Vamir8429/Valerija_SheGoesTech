@@ -7,7 +7,7 @@
 # Note: remember that several symbols 
 # can be printed at once, for example: print ("" * 10 + "*" * 6)
 
-height = int(input("Enter the height of the tree"))
+height = int(input("Enter the height of the tree "))
 for i in range(1, height+1):
     print("*" * i)
 i = i + 1
