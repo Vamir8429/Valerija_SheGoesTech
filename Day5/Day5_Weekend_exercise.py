@@ -14,3 +14,21 @@
 # s2 = "def"
 # output: Not all characters are in the second string
 # so preferably use alphabetic ordering  :)
+
+text_1 = input("Enter your text: ")
+text_2 = input("Enter another text: ")
+print(text_1) #I had a great weekend
+print(text_2) #I went to Klaipeda
+check = text_1 in text_2 #check if all characters in text_1 are in text_2 - False 
+if check == True:
+    print("All character counts in the second string")
+else:
+    print("Not all characters are in the second string")
+
+#text_1 = input(str("Enter your text: "))
+#text_2 = input(str("Enter another text: "))
+#print(text_1) #I had a great weekend
+#print(text_2) #I went to Klaipeda
+
+#for num in range(len(text_1)):
+#    print(text_2.find("text_1[0]"))
