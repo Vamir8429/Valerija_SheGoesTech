@@ -11,18 +11,23 @@
 # 1c The program does not show all the numbers entered but only TOP3 and BOTTOM3 
 # and of course still average.
 
-my_list = []
-user_input = int(input("Please enter couple of numbers:"))
-number_list = user_input.split(" ")
-while True:
-    if user_input == "q":
-        print("You exited the program. Start again! ")
-        break
-    else: 
-        my_list.append(number_list)
-        print(f"All numbers entered by user: , {my_list}")
-        print(f"Average of all entered numbers: , {my_list}\nAverage is {sum(my_list) / len(my_list):.2f}")
-        print(f"BOTTOM 3 {sorted(my_list)[:3]}")
-        print(f"TOP 3 {sorted(my_list)[-3]}")
+list_numbers = []
 
-#PHOTO - NORMAL SOLUTION
+while True:
+    user_input = float(input(
+        "Please enter numbers(separated by comma) or 'q' to quit: "))
+    if user_input == "q":
+        print("You quit")
+        break
+
+    else:
+        list_numbers.append(float(user_input))
+        sorted_number_list = sorted(list_numbers) 
+        # if we did not need original order
+        # then we could have used list_numbers.sort() instead
+        average_calculated = sum(list_numbers) / len(list_numbers)
+        print(
+            f"Numbers you entered are: {list_numbers} , average is: {average_calculated}")
+
+        print(f"Top 3 values you enetered are: {sorted_number_list[-3:]}")
+        print(f"Bottom 3 values you entered are: {sorted_number_list[:3]}")

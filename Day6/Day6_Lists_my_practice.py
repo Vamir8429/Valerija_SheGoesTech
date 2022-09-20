@@ -318,3 +318,97 @@ print(new_list)
 
 print("END OF EXAMPLE")
 
+numbers = list(range(1, 11))
+print(numbers)
+# how could I get squares from numbers? and save them in a list?
+squares = []
+for num in numbers: # numbers could have been range(1,11) as well
+    squares.append(num**2) # so we are squaring each number and appending to squares
+print(squares)
+
+#[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# if you only wanted odd squares what would you do?
+odd_squared = [num**2 for num in numbers if num % 2 == 1] # so we are squaring each number and appending to squares
+# so list comprehensions are very similar to for loops
+# how would we do this with a for loop?
+odd_squared_also = []
+for num in numbers:
+    if num % 2 == 1:
+        odd_squared_also.append(num**2)
+
+print(odd_squared)
+print(odd_squared_also)
+
+odd_numbers = [num for num in numbers if num % 2 == 1]
+print(odd_numbers)
+
+numbers_copy = [num for num in numbers] # so we are copying numbers to numbers_copy
+print(numbers_copy)
+# above is rarely seen, but it is possible
+# because we have a common copy method
+numbers_copy_also = numbers.copy() # so we are copying numbers to numbers_copy
+print(numbers_copy_also)
+
+# this is different than just using a variable to a list
+# NOT A COPY!
+numbers_alias = numbers # so we are aliasing numbers to numbers_alias
+
+numbers[4] = 100
+# so if we change numbers, numbers_alias will change as well
+print(numbers)
+print(numbers_alias)
+print(numbers is numbers_alias) # so they are the same object
+
+# notice how numbers_copy remains the same
+print(numbers_copy)
+print(numbers_copy is numbers) # so they are different objects
+
+# == compares contents for lists!
+print(numbers_copy_also == numbers_copy)
+# however
+print(numbers_copy_also is numbers_copy) # False because not the same objects!
+
+numbers.append(42)
+numbers.append(4)
+print(numbers)
+print(numbers.count(4)) # how many times 4 is in numbers
+
+print(numbers.index(42)) # what is the first index of 42 in numbers
+
+numbers.insert(2, 50) # insert 50 at index 2
+# this will push everything to the right, could be expensive in a large list 
+print(numbers)
+
+last_item = numbers.pop() # removes last item from list and returns it
+# pop will give you an error if list is empty
+print(last_item)
+print(numbers)
+# pop and append go together
+numbers.append(last_item)
+print(numbers)
+
+numbers.reverse() # IN PLACE
+print(numbers)
+# could use OUT OF PLACE reverse
+numbers = numbers[::-1] # OUT OF PLACE
+print(numbers) # back to original
+
+# OUT OF PLACE sort 
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)
+print(numbers) # original list is not changed
+
+# we can sum, min and max on a list of same data types
+print(sum(numbers))
+print(min(numbers))
+print(max(numbers))
+
+# IN PLACE sort
+numbers.sort()
+print(numbers) # original list is changed and can not be retrieved
+
+# finally we can clear the list in place
+numbers.clear() # IN PLACE clears the list!
+print(numbers)

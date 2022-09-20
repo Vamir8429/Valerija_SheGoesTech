@@ -14,14 +14,25 @@
 # All cubes: [8,27,64,125]
 # PS could theoretically do without a list, but with a list it will be more convenient
 
-input_1 = int(input("Please enter first number: "))
-input_2 = int(input("Please enter last number: "))
-if input_1 < input_2:
-    cubed_list = [n**3 for n in range(input_1, input_2+1)]
-    print(cubed_list)
-else:
-    print("Invalid input")
+number_1 = int(input("Enter the beginning number: "))
+number_2 = int(input("Enter the end number: "))
+print(number_1, "-This is my beginning number")
+print(number_2, "-This is my end number")
+my_list = list(range(number_1,number_2+1))
+cubes = []
+for num in my_list:
+    cubes_single = num**3
+    cubes.append(cubes_single)
+    print(f"{num} cubed: {cubes_single}")
+print(cubes, "-All cubes!")
 
-#Please enter first number: 2
-#Please enter last number: 5
-#[8, 27, 64, 125]
+#OUTPUT: 
+#Enter the beginning number: 2
+#Enter the end number: 5
+#2 -This is my beginning number
+#5 -This is my end number
+#2 cubed: 8
+#3 cubed: 27
+#4 cubed: 64
+#5 cubed: 125
+#[8, 27, 64, 125] -All cubes!
