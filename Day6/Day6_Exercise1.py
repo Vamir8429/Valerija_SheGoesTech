@@ -12,14 +12,17 @@
 # and of course still average.
 
 my_list = []
-input_list = input("Please enter couple of numbers(comma separated:")
+user_input = int(input("Please enter couple of numbers:"))
+number_list = user_input.split(" ")
 while True:
-    if input_list == "q":
+    if user_input == "q":
         print("You exited the program. Start again! ")
         break
     else: 
-        my_list.append(input_list)
+        my_list.append(number_list)
         print(f"All numbers entered by user: , {my_list}")
         print(f"Average of all entered numbers: , {my_list}\nAverage is {sum(my_list) / len(my_list):.2f}")
         print(f"BOTTOM 3 {sorted(my_list)[:3]}")
         print(f"TOP 3 {sorted(my_list)[-3]}")
+
+#PHOTO - NORMAL SOLUTION
