@@ -14,3 +14,12 @@
 
 # is_palindrome("nava") -> False
 
+def is_palindrome(text):
+    text = str(text)
+    if text == text[::-1]:
+        print("True")
+    else:
+        print("False")
+
+text = "aba"
+is_palindrome(text)
