@@ -16,10 +16,11 @@
 
 def is_palindrome(text):
     text = str(text)
+    text = text.replace(" ", "").lower()
     if text == text[::-1]:
         print("True")
     else:
         print("False")
 
-text = "aba"
+text = "Alus ari i ra    sula"
 is_palindrome(text)
