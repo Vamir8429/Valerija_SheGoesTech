@@ -1,41 +1,28 @@
 # # 3. City Population
 
 
-
 # The city has a known population p0
-
 # A percentage of population perc is added each year
-
 # Every year a certain number of delta also arrive (or leave)
-
 # We need to know when (if at all) the city will reach a population of p
 
-
-
-# Write a function get_city_year (p0, perc, delta, target_p) that returns the years (full) when target_p is reached.
-
-
+# Write a function get_city_year (p0, perc, delta, target_p) 
+# that returns the years (full) when target_p is reached.
 
 # If target_p cannot be reached, then we return -1
 
-
-
 # Example:
-
-
-
 # get_city_year(1000,2,50,1200) -> 3
 
 # 1000 + 1000 * 0.02 + 50 => 1070 after the 1st year
-# notice that we have an integer (whole number) percentage, so the population after the 1st year is 1070, not 1070.4 or 1070.6
+# notice that we have an integer (whole number) percentage, 
+# so the population after the 1st year is 1070, not 1070.4 or 1070.6
 
 # 1070 + 1070 * 0.02 + 50 => 1141 after the 2nd year
 
 # 1141 + 1141 * 0.02 + 50 => 1213 after the 3rd year 
 
 # so the function here returns 3 and is done
-
-
 
 # PS. Note that we give perc as a percentage to be converted to a decimal number.
 
@@ -51,3 +38,20 @@
 
 # the trickiest case is something like this
 # get_city_year(1000, -3, 50, 2000) -> -1 is the correct answer but how to get there?
+
+
+def get_city_year(p0=0, perc=0, delta=0, p=0):
+    percents = perc * 0.01
+    new_pop = 0.0
+    years = 0
+    while new_pop < p:  # p is our target population
+        new_pop = p0 + (p0 * percents) + delta
+        if new_pop <= p0:
+            return -1
+            break
+        p0 = new_pop
+        years += 1
+
+    return years
+
+print(get_city_year(1000, 2, -50, 5000))
