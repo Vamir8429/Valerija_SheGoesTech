@@ -11,7 +11,7 @@
 #  There may also be a solution with Counter from standard Python 
 # library but this is definitely not necessary, although it is very elegant smile
 
-from collections import Counter
+#from collections import Counter
 
 def get_char_count(text):
     my_output = {}
