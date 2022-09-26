@@ -21,7 +21,6 @@
 # {'b': 6} because 3 and 5 were in the list of values to delete.
 
 
-
 # PS. Remember we can use del d['a'] only if the key 'a' exists.
 
 # !! When resizing a dictionary, we are not allowed to iterate at the same time!
@@ -30,3 +29,39 @@
 # There are two options: either walk through the copy 
 # my_dict.copy.items(), or build a new dictionary. 
 # Dictionary comprehension would be one option.
+
+#3A 
+
+def clean_dict_value_3a(d, bad_val):
+    clean_dict = {k: v for k, v in d.items() if v != bad_val}
+    return clean_dict
+
+my_dict = {'m': 1, 'y': 2, 'e': 3}
+print(my_dict)
+print(clean_dict_value_3a(my_dict, 2))
+print(my_dict)
+new_dict = clean_dict_value_3a(my_dict, 2)
+print(my_dict)
+print(new_dict)
+
+#{'m': 1, 'y': 2, 'e': 3}
+#{'m': 1, 'e': 3}
+#{'m': 1, 'y': 2, 'e': 3}
+#{'m': 1, 'y': 2, 'e': 3}
+#{'m': 1, 'e': 3}
+
+# Ex. 3b
+# OUT OF PLACE
+def clean_dict_values_3b(d, bad_list):
+    return {k: v for k, v in d.items() if v not in bad_list}
+
+
+print(clean_dict_values_3b({'m': 1, 'y': 2, 'e': 3}, [1, 2]))
+
+cleaned_dict = clean_dict_values_3b(my_dict, [1, 2])
+print(my_dict)
+print(cleaned_dict)
+
+#{'e': 3}
+#{'m': 1, 'y': 2, 'e': 3}
+#{'e': 3}

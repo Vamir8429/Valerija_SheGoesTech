@@ -24,3 +24,5 @@ def get_char_count(text):
 
 print(get_char_count("Hellolove"))
 
+#{'H': 1, 'e': 2, 'l': 3, 'o': 2, 'v': 1}
+
