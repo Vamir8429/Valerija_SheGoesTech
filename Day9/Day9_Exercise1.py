@@ -20,3 +20,4 @@ def get_min_avg_max(sequence):
 
 print(get_min_avg_max([0,10,1,9]))
 print(get_min_avg_max([2,4,6.8]))
+#print(get_min_avg_max("vamir")) - Does not work
