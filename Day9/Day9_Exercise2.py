@@ -21,3 +21,10 @@
 # with common elements
 # get_common_elements(seq1, seq2, seq3, seq4, seq5, seq6, seq7) etc :), 
 # so just like print takes any number of values
+
+def get_common_elements(seq1, seq2, seq3):
+    return tuple(set(seq1) & set(seq2) & set(seq3))
+
+print(get_common_elements([1,2,3], [2,3,4], [1,3,5]))
+
+#OUTPUT: (3,)

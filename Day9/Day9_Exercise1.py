@@ -18,6 +18,7 @@ def get_min_avg_max(sequence):
         my_tuple = (min_value, mean_value, max_value)
         return my_tuple
 
-print(get_min_avg_max([0,10,1,9]))
-print(get_min_avg_max([2,4,6.8]))
-#print(get_min_avg_max("vamir")) - Does not work
+print(get_min_avg_max([0,10,1,9])) #OUTPUT: (0, 5, 10)
+print(get_min_avg_max([2,4,6.8])) #OUTPUT: (2, 4, 6.8)
+#print(get_min_avg_max("vamir")) - Does not work with strings, how to fix?
+
