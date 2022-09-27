@@ -22,8 +22,9 @@ def my_funct_strings(a, b, badstring):
     new_set2 = set2 - set3
     #return new_set1.intersection(new_set2)
     result = new_set1.intersection(new_set2)
-    result = "".join(result)
+    result = "".join(sorted(result))
     return result
 
 print(my_funct_strings("abcf", "fab", "boo"))
+
 
