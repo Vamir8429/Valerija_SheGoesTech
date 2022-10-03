@@ -53,10 +53,23 @@ class Deck:
         return cards
 
 if __name__ == "__main__":
-    print(get_shuffled_cards())
+    #print(get_shuffled_cards())
     my_deck = Deck()
     my_deck.shuffle()
     print(my_deck)
-    print(my_deck.get_cards(2))
-    print(my_deck.get_cards(6))
+    print(my_deck.get_cards(2)) #[('A', 'spades (♠)'), ('J', 'clubs (♣)')]
+    print(my_deck.get_cards(6)) #[(10, 'diamonds (♦)'), (9, 'clubs (♣)'), (5, 'diamonds (♦)'), (10, 'clubs (♣)'), (10, 'spades (♠)'), (4, 'spades (♠)')]
     print(my_deck)
+
+#Available cards: [('Q', 'hearts (♥)'), (3, 'spades (♠)'), (7, 'diamonds (♦)'), (8, 'hearts (♥)'), 
+# (3, 'hearts (♥)'), (5, 'spades (♠)'), ('J', 'hearts (♥)'), (2, 'hearts (♥)'), (10, 'hearts (♥)'), 
+# (6, 'spades (♠)'), ('K', 'spades (♠)'), (6, 'clubs (♣)'), ('K', 'clubs (♣)'), (3, 'diamonds (♦)'), 
+# (4, 'hearts (♥)'), (7, 'hearts (♥)'), ('K', 'hearts (♥)'), (3, 'clubs (♣)'), (9, 'spades (♠)'), 
+# (6, 'diamonds (♦)'), (10, 'diamonds (♦)'), (8, 'spades (♠)'), (4, 'clubs (♣)'), ('K', 'diamonds (♦)'), 
+# ('J', 'spades (♠)'), (10, 'spades (♠)'), ('A', 'clubs (♣)'), (9, 'diamonds (♦)'), ('A', 'hearts (♥)'), 
+# ('Q', 'diamonds (♦)'), ('A', 'diamonds (♦)'), ('J', 'diamonds (♦)'), (9, 'clubs (♣)'), (5, 'hearts (♥)'), 
+# (2, 'clubs (♣)'), (8, 'clubs (♣)'), ('J', 'clubs (♣)'), (8, 'diamonds (♦)'), ('Q', 'spades (♠)'), 
+# (6, 'hearts (♥)'), (7, 'clubs (♣)'), (4, 'diamonds (♦)'), (4, 'spades (♠)'), (9, 'hearts (♥)'), 
+# (2, 'diamonds (♦)'), (5, 'diamonds (♦)'), (5, 'clubs (♣)'), (2, 'spades (♠)'), ('A', 'spades (♠)'), 
+# (10, 'clubs (♣)'), (7, 'spades (♠)'), ('Q', 'clubs (♣)')]
+#Spent cards: []
