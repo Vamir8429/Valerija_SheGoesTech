@@ -74,41 +74,54 @@
 # Gāju YAH meklēt YAH ziemeļmeitu YAH
 
 class Song:
-    def __init__(self, title, author, lyrics):
+    # notice how lyrics default is a tuple, not a list, lists as defaults are dangerous
+    def __init__(self, title="", author="", lyrics=()):
         self.title = title
         self.author = author
         self.lyrics = lyrics
-        print(f"{title} by {author} - created {len(self.lyrics)} lines")
+        # print(f"New Song made by {self.author} called {self.title}")
+        self.__print_song_info()
 
-    # _ significies that this method is for internal use by the other methods in the object
-    def _print_lyrics(self, lyrics, max_lines=-1):  # these lyrics will be processed already
-        if max_lines == -1:
-            max_lines = len(lyrics)
-        for i in lyrics[:max_lines]:
-            print(i)
-        # we could return self here as well
+    # so private function for internal use only
+    # we lose some customizability but we gain some security
+    # it could have been public but we don't want to expose it with no need
+    def __print_song_info(self):
+        print(f"Song by {self.author} called {self.title}")
 
     def sing(self, max_lines=-1):
-        # self.max_lines = max_lines
-        print(f" Singing {self.title} - {self.author}")
-        self._print_lyrics(self.lyrics, max_lines)
-        return self
+        # print(f"Singing song by {self.author} called {self.title}")
+        self.__print_song_info()
+        if max_lines == -1:
+            max_lines = len(self.lyrics) # our default
+        for line in self.lyrics[:max_lines]: # so default will be all lines
+            print(line)
+        return self # so by returning self we can chain methods like this:
 
     def yell(self, max_lines=-1):
-        capital_lyrics = [line.upper() for line in self.lyrics]
-        print(f"YELLING {self.title} - {self.author}")
-        self._print_lyrics(capital_lyrics, max_lines)
+        # print(f"Yelling song by {self.author} called {self.title}")
+        self.__print_song_info()
+        if max_lines == -1:
+            max_lines = len(self.lyrics) # our default
+        for line in self.lyrics[:max_lines]:
+            print(line.upper())
         return self
 
+# Minimum:
 
-ziemelmeita = Song("Ziemeļmeita", "Jumprava", ["Gāju meklēt ziemeļmeitu", "Garu, tālu ceļu veicu"])
-ziemelmeita.sing(1).yell()
+# Write a method sing that prints the song line by line on the screen, first printing the author and title, if any.
 
-vairogi = Song("Vairogi", "Līvi", ["Mūsu dziesmas ir vairogi seni", "Mēs tās par pagalvjiem liksim",
-                                   "Daudzu likteņu pilni mēs elposim", "Kā pakalni Daugavas krastos"])
-vairogi.sing(2).yell(1)
+# Write a method yell that prints the song in capital letters line by line on the screen, first printing the author and title, if any.
 
-vairogi.sing().sing().sing()
+# Bonus: make the above sing and chain methods chainable, so we can call them several times (chained)
+
+# Bonus: create an additional parameter max_lines to yell and sing methods that prints only a certain number of lines for both sing and yell. Better do with some default value e.g. -1, at which all rows are then printed.
+
+# Create multiple songs with lyrics
+
+# Example:
+
+blank_song = Song()
+ziemelmeita = Song("Ziemeļmeita", "Jumprava", ["Gāju meklēt ziemeļmeitu","Garu, tālu ceļu veicu","Grūti bija"])
 
 
 class Rap(Song):
@@ -133,3 +146,31 @@ livi = Rap("Vairogi", "Līvi", ["Mūsu dziesmas ir vairogi seni", "Mēs tās par
                                    "Daudzu likteņu pilni mēs elposim", "Kā pakalni Daugavas krastos"])
 
 livi.sing().yell(2).break_it(drop="Jā!").break_it(2, "ahh")
+
+
+#EXERCISE 2 
+
+class Rap(Song):
+    def break_it(self, max_lines=-1, drop="yeah"):
+        print(f"Breaking down rap by {self.author} called {self.title}")
+        if max_lines == -1:
+            max_lines = len(self.lyrics) # our default
+        for line in self.lyrics[:max_lines]:
+            words = line.split()
+            new_line = f" {drop} ".join(words) + " " + drop # add drop at the end
+            # # using replace as long as lyrics do not have extra whitespaces
+            # new_line = line.replace(" ", f" {drop} ") + " " + drop
+            # # the replace approach is more prone to input errors
+            print(new_line)
+        return self
+#  add a new method break_it with two default parameters max_lines=-1 and drop equal to "yeah", which is similar to sing, but adds a drop after each word .
+
+# Example: 
+
+
+
+zrap = Rap("Ziemeļmeita", "Jumprava", ["Gāju meklēt ziemeļmeitu","Garu, tālu ceļu veicu"])
+
+
+
+zrap.yell().break_it(1, "yah")
