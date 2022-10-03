@@ -88,26 +88,41 @@ class Garage:
 # # # # # # # # end of our class definition, that is end of our blueprint
 # # # #
 # # # #
-#simple_garage = Garage()
-#print(simple_garage)  # without __str__ definition not very useful
-#print(simple_garage.color)
-#print(simple_garage.name)
-#print(simple_garage._nail_color) # we can access this semi-private property
+simple_garage = Garage()
+print(simple_garage)  # without __str__ definition not very useful
+print(simple_garage.color)
+print(simple_garage.name)
+print(simple_garage._nail_color) # we can access this semi-private property
 # single _ simply means this should not be messed with
 # but I could if I really wanted to
 # # # solution controlled access to private variables using methods
 # so called getter or accessor methods
-#print(simple_garage.get_secret())
-#simple_garage.set_secret("12345") # too short
-#simple_garage.set_secret("123456") # number on my garage door
-#print(simple_garage.get_secret())
+print(simple_garage.get_secret())
+simple_garage.set_secret("12345") # too short
+simple_garage.set_secret("123456") # number on my garage door
+print(simple_garage.get_secret())
 #print(simple_garage) # this will not look too good, just a memory address
-# # # # # # # print(simple_garage)
-# # # # # # # # # print(simple_garage.__secret_stash) # so __property is renamed using name mangling
-# # # # # # # # print(simple_garage.get_secret()) # using getter to obtain private information
+print(simple_garage)
+#print(simple_garage.__secret_stash) # so __property is renamed using name mangling
+print(simple_garage.get_secret()) # using getter to obtain private information
 # # # #
-# # # # # # print(simple_garage.g_name)
+#print(simple_garage.g_name)
 # # # # # # simple_garage.g_name = "Mana garāža"
 # # # # # # print(simple_garage.g_name)
 # # # # # # # # # # # to avoid always initalize by hand constructors were created
 # # # #
+
+homer_garage = Garage(color="yellow", nails=33)
+flanders_garage = Garage(color="blue", nails=55, name="Property of Flanders")
+print(homer_garage)  # this works because we wrote our own __str__ method
+print(flanders_garage)
+mutant_garage = homer_garage + flanders_garage  # we created our own __add__ method, gaining syntax sugar
+print(mutant_garage)
+print("end")
+mut_garage = homer_garage.__add__(flanders_garage)  # same as above
+
+print(mutant_garage)
+print(mut_garage)
+
+print("end")
+mutant_garage.simple_print().add_nails(77).simple_print().set_nails(500).add_nails(10).simple_print()
