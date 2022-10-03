@@ -18,7 +18,6 @@ def get_shuffled_cards():
     my_values = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"]
     my_cards = ["diamonds ♦", "hearts ♥", "spades ♠", "clubs ♣"]
     cards = [(value, suit) for value in my_values for suit in my_cards]
-
     random.shuffle(cards)
     return cards
 
