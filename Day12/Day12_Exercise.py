@@ -88,6 +88,9 @@ def save_lines(destpath, lines, sep='\n', encoding='utf-8'):
 # then we pass empty string as a separator
 #save_lines("pure_sherlock.txt", text_lines_with_newlines, sep="")
 
+
+#1E:
+
 import string
 def clean_punkts(srcpath, destpath):
     with open(srcpath, encoding="utf-8") as fin, open(destpath, mode="w", encoding="utf-8") as fout:
@@ -100,3 +103,16 @@ def clean_punkts(srcpath, destpath):
 srcpath='Day12/pure_sherlock.txt'
 destpath='Day12/clean_sherlock.txt'
 clean_punkts(srcpath, destpath)
+
+# 1f -> write the function get_word_usage(srcpath, destpath)
+# The function opens the file and finds the most frequently used words
+# recommendation to use Counter module!
+# assume that the words are separated by either whitespace or newline 
+# (the good old split will come in handy)
+# the saved list of words and frequency should be saved in destpath in the following form:
+# word, count
+# un, 3423
+# es, 3242
+
+# in effect you will be saving in standard csv format - https://docs.python.org/3/library/csv.html
+# you can use csv module for this, but it is not necessary
