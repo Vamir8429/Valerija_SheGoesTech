@@ -4,20 +4,20 @@
 # # # # # # # Available across most OSes
 # #
 # # # # # # # 4 ways of importing modules
-# import datetime
-# print(datetime.datetime.now())
-# print(datetime.datetime.today())
+import datetime
+print(datetime.datetime.now())
+print(datetime.datetime.today())
 from datetime import datetime as dt  # datetime has datetime submodule!
-# print(dt.now()) # we using renamed datetime as dt
-# from datetime import datetime
-# print(datetime.now()) # we are using the original datetime
-# print(datetime.now().year)
+print(dt.now()) # we using renamed datetime as dt
+from datetime import datetime
+print(datetime.now()) # we are using the original datetime
+print(datetime.now().year)
 import string # mostly useful constants
-# print(string.ascii_letters)
-# print(string.digits)
+print(string.ascii_letters)
+print(string.digits)
 import math
 # # # # # # # import math as mth # Python likes these short names but not for standard library!
-# print(math.cos(3.1415926), math.sin(math.pi), math.pi)
+print(math.cos(3.1415926), math.sin(math.pi), math.pi)
 # from math import floor # i could import floor alone but beware name collission
 # print(floor(3.15)) # we could have used int here instead, TODO is there different between floor and int?
 # # so floor will be different from int if we have a negative number
