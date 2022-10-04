@@ -57,23 +57,25 @@ print(result) #12304
 # list with only those lines that contain text.
 
 def get_text_lines(fpath):
-    with open(fpath, encoding="utf-8") as fstream:
-        poem_lines = (line.rstrip() for line in fstream)
-        return poem_lines
+    with open(fpath,encoding='utf-8') as f:
+        # filter out lines that contain only whitespace
+        # whitespace is defined by string.whitespace
+        # https://docs.python.org/3/library/string.html#string.whitespace
+        # whitespace is \n, \t, \r, \v, \f, ' '
+        lines = [line.strip() for line in f if line.strip()]
+        # lines = [line for line in lines if len(line.strip()) > 0]
+    return lines
 
 # 1c -> write the function save_lines(destpath, lines)
 # This function will store all lines into destpath file 
 
-def save_lines(destpath, lines):
-    with open(lines, "w", encoding="UTF-8") as f:
-        for line in destpath:
-            f.write(line + "\n")
+def save_lines(destpath, lines, sep='\n', encoding='utf-8'):
+    with open(destpath, "w", encoding=encoding) as f:
+        for line in lines:
+            f.write(line + sep)
 
 # 1d -> call save_lines with destpath being "pure_sherlock.txt" 
 # and lines being the text lines we cleaned from 1b
-
-#poem_lines = get_poem_lines("veidenbaums.txt")
-#save_lines("veidenbaums_clean.txt", poem_lines)
 
 poem_lines = get_text_lines("Day12/sherlock_holmes_adventures.txt")
 save_lines("Day12/pure_sherlock.txt", poem_lines)
