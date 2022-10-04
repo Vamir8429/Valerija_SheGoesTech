@@ -77,5 +77,26 @@ def save_lines(destpath, lines, sep='\n', encoding='utf-8'):
 # 1d -> call save_lines with destpath being "pure_sherlock.txt" 
 # and lines being the text lines we cleaned from 1b
 
-poem_lines = get_text_lines("Day12/sherlock_holmes_adventures.txt")
-save_lines("Day12/pure_sherlock.txt", poem_lines)
+#poem_lines = get_text_lines("Day12/sherlock_holmes_adventures.txt")
+#save_lines("Day12/pure_sherlock.txt", poem_lines)
+
+# let's add a new line at the end of each line
+# 
+#save_lines("pure_sherlock_b.txt", text_lines)
+# if we ant to add a new line at the end of each line
+#text_lines_with_newlines = [line + '\n' for line in text_lines]
+# then we pass empty string as a separator
+#save_lines("pure_sherlock.txt", text_lines_with_newlines, sep="")
+
+import string
+def clean_punkts(srcpath, destpath):
+    with open(srcpath, encoding="utf-8") as fin, open(destpath, mode="w", encoding="utf-8") as fout:
+        for line in fin:
+            for character in line:
+                if character in string.punctuation: # you could skip this if and just use replace
+                    line = line.replace(character, '')                    
+            fout.write(line)
+
+srcpath='Day12/pure_sherlock.txt'
+destpath='Day12/clean_sherlock.txt'
+clean_punkts(srcpath, destpath)
