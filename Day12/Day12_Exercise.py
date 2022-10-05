@@ -100,9 +100,9 @@ def clean_punkts(srcpath, destpath):
                     line = line.replace(character, '')                    
             fout.write(line)
 
-srcpath='Day12/pure_sherlock.txt'
-destpath='Day12/clean_sherlock.txt'
-clean_punkts(srcpath, destpath)
+#srcpath='Day12/pure_sherlock.txt'
+#destpath='Day12/clean_sherlock.txt'
+#clean_punkts(srcpath, destpath)
 
 # 1f -> write the function get_word_usage(srcpath, destpath)
 # The function opens the file and finds the most frequently used words
@@ -116,3 +116,15 @@ clean_punkts(srcpath, destpath)
 
 # in effect you will be saving in standard csv format - https://docs.python.org/3/library/csv.html
 # you can use csv module for this, but it is not necessary
+
+from collections import Counter
+
+def get_word_usage(srcpath, destpath):
+            with open(srcpath, encoding="utf-8") as fin, open(destpath, mode="w", encoding="utf-8") as f:
+                word_list = tuple(fin.split())
+                word_count = Counter(word_list)
+                f.write(word_count)
+
+srcpath='Day12/pure_sherlock.txt'
+destpath='Day12/count_sherlock.txt'
+get_word_usage(srcpath, destpath)
