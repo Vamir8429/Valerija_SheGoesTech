@@ -24,4 +24,4 @@ plt.title("My first plot")
 plt.xlabel("My list of values")
 plt.ylabel("My cubed values")
 
-plt.show()
+#plt.show() - shows plot 
