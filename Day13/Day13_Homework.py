@@ -14,7 +14,7 @@ def dice_throw(dice, throw):
     dice_list = [random.randint(1, 4) for _ in range(0,throw)]
     print(dice_list)
 
-dice_throw(3,10) #[3, 2, 1, 3, 3, 2, 1, 2, 3, 1]
+#dice_throw(3,10) #[3, 2, 1, 3, 3, 2, 1, 2, 3, 1]
 
 # even better would be a another function to which you give the list of dice throws and it 
 # plots the histogram
