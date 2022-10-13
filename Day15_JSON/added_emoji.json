@@ -1,0 +1,1070 @@
+[
+    {
+        "name": "grapes",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127815;"
+        ],
+        "unicode": [
+            "U+1F347"
+        ],
+        "emoji": "🍇"
+    },
+    {
+        "name": "melon",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127816;"
+        ],
+        "unicode": [
+            "U+1F348"
+        ],
+        "emoji": "🍈"
+    },
+    {
+        "name": "watermelon",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127817;"
+        ],
+        "unicode": [
+            "U+1F349"
+        ],
+        "emoji": "🍉"
+    },
+    {
+        "name": "tangerine",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127818;"
+        ],
+        "unicode": [
+            "U+1F34A"
+        ],
+        "emoji": "🍊"
+    },
+    {
+        "name": "lemon",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127819;"
+        ],
+        "unicode": [
+            "U+1F34B"
+        ],
+        "emoji": "🍋"
+    },
+    {
+        "name": "banana",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127820;"
+        ],
+        "unicode": [
+            "U+1F34C"
+        ],
+        "emoji": "🍌"
+    },
+    {
+        "name": "pineapple",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127821;"
+        ],
+        "unicode": [
+            "U+1F34D"
+        ],
+        "emoji": "🍍"
+    },
+    {
+        "name": "red apple",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127822;"
+        ],
+        "unicode": [
+            "U+1F34E"
+        ],
+        "emoji": "🍎"
+    },
+    {
+        "name": "green apple",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127823;"
+        ],
+        "unicode": [
+            "U+1F34F"
+        ],
+        "emoji": "🍏"
+    },
+    {
+        "name": "pear",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127824;"
+        ],
+        "unicode": [
+            "U+1F350"
+        ],
+        "emoji": "🍐"
+    },
+    {
+        "name": "peach",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127825;"
+        ],
+        "unicode": [
+            "U+1F351"
+        ],
+        "emoji": "🍑"
+    },
+    {
+        "name": "cherries",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127826;"
+        ],
+        "unicode": [
+            "U+1F352"
+        ],
+        "emoji": "🍒"
+    },
+    {
+        "name": "strawberry",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127827;"
+        ],
+        "unicode": [
+            "U+1F353"
+        ],
+        "emoji": "🍓"
+    },
+    {
+        "name": "kiwifruit",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#129373;"
+        ],
+        "unicode": [
+            "U+1F95D"
+        ],
+        "emoji": "🥝"
+    },
+    {
+        "name": "tomato",
+        "category": "food and drink",
+        "group": "food fruit",
+        "htmlCode": [
+            "&#127813;"
+        ],
+        "unicode": [
+            "U+1F345"
+        ],
+        "emoji": "🍅"
+    },
+    {
+        "name": "avocado",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#129361;"
+        ],
+        "unicode": [
+            "U+1F951"
+        ],
+        "emoji": "🥑"
+    },
+    {
+        "name": "aubergine ≊ eggplant",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#127814;"
+        ],
+        "unicode": [
+            "U+1F346"
+        ],
+        "emoji": "🍆"
+    },
+    {
+        "name": "potato",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#129364;"
+        ],
+        "unicode": [
+            "U+1F954"
+        ],
+        "emoji": "🥔"
+    },
+    {
+        "name": "carrot",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#129365;"
+        ],
+        "unicode": [
+            "U+1F955"
+        ],
+        "emoji": "🥕"
+    },
+    {
+        "name": "ear of maize ≊ ear of corn",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#127805;"
+        ],
+        "unicode": [
+            "U+1F33D"
+        ],
+        "emoji": "🌽"
+    },
+    {
+        "name": "hot pepper",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#127798;"
+        ],
+        "unicode": [
+            "U+1F336"
+        ],
+        "emoji": "🌶"
+    },
+    {
+        "name": "cucumber",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#129362;"
+        ],
+        "unicode": [
+            "U+1F952"
+        ],
+        "emoji": "🥒"
+    },
+    {
+        "name": "mushroom",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#127812;"
+        ],
+        "unicode": [
+            "U+1F344"
+        ],
+        "emoji": "🍄"
+    },
+    {
+        "name": "peanuts",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#129372;"
+        ],
+        "unicode": [
+            "U+1F95C"
+        ],
+        "emoji": "🥜"
+    },
+    {
+        "name": "chestnut",
+        "category": "food and drink",
+        "group": "food vegetable",
+        "htmlCode": [
+            "&#127792;"
+        ],
+        "unicode": [
+            "U+1F330"
+        ],
+        "emoji": "🌰"
+    },
+    {
+        "name": "bread",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127838;"
+        ],
+        "unicode": [
+            "U+1F35E"
+        ],
+        "emoji": "🍞"
+    },
+    {
+        "name": "croissant",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#129360;"
+        ],
+        "unicode": [
+            "U+1F950"
+        ],
+        "emoji": "🥐"
+    },
+    {
+        "name": "baguette bread",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#129366;"
+        ],
+        "unicode": [
+            "U+1F956"
+        ],
+        "emoji": "🥖"
+    },
+    {
+        "name": "pancakes",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#129374;"
+        ],
+        "unicode": [
+            "U+1F95E"
+        ],
+        "emoji": "🥞"
+    },
+    {
+        "name": "cheese wedge",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#129472;"
+        ],
+        "unicode": [
+            "U+1F9C0"
+        ],
+        "emoji": "🧀"
+    },
+    {
+        "name": "meat on bone",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127830;"
+        ],
+        "unicode": [
+            "U+1F356"
+        ],
+        "emoji": "🍖"
+    },
+    {
+        "name": "poultry leg",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127831;"
+        ],
+        "unicode": [
+            "U+1F357"
+        ],
+        "emoji": "🍗"
+    },
+    {
+        "name": "bacon",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#129363;"
+        ],
+        "unicode": [
+            "U+1F953"
+        ],
+        "emoji": "🥓"
+    },
+    {
+        "name": "hamburger",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127828;"
+        ],
+        "unicode": [
+            "U+1F354"
+        ],
+        "emoji": "🍔"
+    },
+    {
+        "name": "french fries",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127839;"
+        ],
+        "unicode": [
+            "U+1F35F"
+        ],
+        "emoji": "🍟"
+    },
+    {
+        "name": "slice of pizza ≊ pizza",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127829;"
+        ],
+        "unicode": [
+            "U+1F355"
+        ],
+        "emoji": "🍕"
+    },
+    {
+        "name": "hot dog",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127789;"
+        ],
+        "unicode": [
+            "U+1F32D"
+        ],
+        "emoji": "🌭"
+    },
+    {
+        "name": "taco",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127790;"
+        ],
+        "unicode": [
+            "U+1F32E"
+        ],
+        "emoji": "🌮"
+    },
+    {
+        "name": "burrito",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127791;"
+        ],
+        "unicode": [
+            "U+1F32F"
+        ],
+        "emoji": "🌯"
+    },
+    {
+        "name": "stuffed flatbread",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#129369;"
+        ],
+        "unicode": [
+            "U+1F959"
+        ],
+        "emoji": "🥙"
+    },
+    {
+        "name": "egg",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#129370;"
+        ],
+        "unicode": [
+            "U+1F95A"
+        ],
+        "emoji": "🥚"
+    },
+    {
+        "name": "cooking",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127859;"
+        ],
+        "unicode": [
+            "U+1F373"
+        ],
+        "emoji": "🍳"
+    },
+    {
+        "name": "shallow pan of food",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#129368;"
+        ],
+        "unicode": [
+            "U+1F958"
+        ],
+        "emoji": "🥘"
+    },
+    {
+        "name": "pot of food",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127858;"
+        ],
+        "unicode": [
+            "U+1F372"
+        ],
+        "emoji": "🍲"
+    },
+    {
+        "name": "green salad",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#129367;"
+        ],
+        "unicode": [
+            "U+1F957"
+        ],
+        "emoji": "🥗"
+    },
+    {
+        "name": "popcorn",
+        "category": "food and drink",
+        "group": "food prepared",
+        "htmlCode": [
+            "&#127871;"
+        ],
+        "unicode": [
+            "U+1F37F"
+        ],
+        "emoji": "🍿"
+    },
+    {
+        "name": "bento box",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127857;"
+        ],
+        "unicode": [
+            "U+1F371"
+        ],
+        "emoji": "🍱"
+    },
+    {
+        "name": "rice cracker",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127832;"
+        ],
+        "unicode": [
+            "U+1F358"
+        ],
+        "emoji": "🍘"
+    },
+    {
+        "name": "rice ball",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127833;"
+        ],
+        "unicode": [
+            "U+1F359"
+        ],
+        "emoji": "🍙"
+    },
+    {
+        "name": "cooked rice",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127834;"
+        ],
+        "unicode": [
+            "U+1F35A"
+        ],
+        "emoji": "🍚"
+    },
+    {
+        "name": "curry and rice ≊ curry rice",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127835;"
+        ],
+        "unicode": [
+            "U+1F35B"
+        ],
+        "emoji": "🍛"
+    },
+    {
+        "name": "steaming bowl",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127836;"
+        ],
+        "unicode": [
+            "U+1F35C"
+        ],
+        "emoji": "🍜"
+    },
+    {
+        "name": "spaghetti",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127837;"
+        ],
+        "unicode": [
+            "U+1F35D"
+        ],
+        "emoji": "🍝"
+    },
+    {
+        "name": "roasted sweet potato",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127840;"
+        ],
+        "unicode": [
+            "U+1F360"
+        ],
+        "emoji": "🍠"
+    },
+    {
+        "name": "oden",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127842;"
+        ],
+        "unicode": [
+            "U+1F362"
+        ],
+        "emoji": "🍢"
+    },
+    {
+        "name": "sushi",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127843;"
+        ],
+        "unicode": [
+            "U+1F363"
+        ],
+        "emoji": "🍣"
+    },
+    {
+        "name": "fried shrimp",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127844;"
+        ],
+        "unicode": [
+            "U+1F364"
+        ],
+        "emoji": "🍤"
+    },
+    {
+        "name": "fish cake with swirl design ≊ fish cake with swirl",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127845;"
+        ],
+        "unicode": [
+            "U+1F365"
+        ],
+        "emoji": "🍥"
+    },
+    {
+        "name": "dango",
+        "category": "food and drink",
+        "group": "food asian",
+        "htmlCode": [
+            "&#127841;"
+        ],
+        "unicode": [
+            "U+1F361"
+        ],
+        "emoji": "🍡"
+    },
+    {
+        "name": "soft ice cream",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127846;"
+        ],
+        "unicode": [
+            "U+1F366"
+        ],
+        "emoji": "🍦"
+    },
+    {
+        "name": "shaved ice",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127847;"
+        ],
+        "unicode": [
+            "U+1F367"
+        ],
+        "emoji": "🍧"
+    },
+    {
+        "name": "ice cream",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127848;"
+        ],
+        "unicode": [
+            "U+1F368"
+        ],
+        "emoji": "🍨"
+    },
+    {
+        "name": "doughnut",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127849;"
+        ],
+        "unicode": [
+            "U+1F369"
+        ],
+        "emoji": "🍩"
+    },
+    {
+        "name": "cookie",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127850;"
+        ],
+        "unicode": [
+            "U+1F36A"
+        ],
+        "emoji": "🍪"
+    },
+    {
+        "name": "birthday cake",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127874;"
+        ],
+        "unicode": [
+            "U+1F382"
+        ],
+        "emoji": "🎂"
+    },
+    {
+        "name": "shortcake",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127856;"
+        ],
+        "unicode": [
+            "U+1F370"
+        ],
+        "emoji": "🍰"
+    },
+    {
+        "name": "chocolate bar",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127851;"
+        ],
+        "unicode": [
+            "U+1F36B"
+        ],
+        "emoji": "🍫"
+    },
+    {
+        "name": "candy",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127852;"
+        ],
+        "unicode": [
+            "U+1F36C"
+        ],
+        "emoji": "🍬"
+    },
+    {
+        "name": "lollipop",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127853;"
+        ],
+        "unicode": [
+            "U+1F36D"
+        ],
+        "emoji": "🍭"
+    },
+    {
+        "name": "custard",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127854;"
+        ],
+        "unicode": [
+            "U+1F36E"
+        ],
+        "emoji": "🍮"
+    },
+    {
+        "name": "honey pot",
+        "category": "food and drink",
+        "group": "food sweet",
+        "htmlCode": [
+            "&#127855;"
+        ],
+        "unicode": [
+            "U+1F36F"
+        ],
+        "emoji": "🍯"
+    },
+    {
+        "name": "baby bottle",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#127868;"
+        ],
+        "unicode": [
+            "U+1F37C"
+        ],
+        "emoji": "🍼"
+    },
+    {
+        "name": "glass of milk",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#129371;"
+        ],
+        "unicode": [
+            "U+1F95B"
+        ],
+        "emoji": "🥛"
+    },
+    {
+        "name": "hot beverage",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#9749;"
+        ],
+        "unicode": [
+            "U+2615"
+        ],
+        "emoji": "☕"
+    },
+    {
+        "name": "teacup without handle",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#127861;"
+        ],
+        "unicode": [
+            "U+1F375"
+        ],
+        "emoji": "🍵"
+    },
+    {
+        "name": "sake bottle and cup ≊ sake",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#127862;"
+        ],
+        "unicode": [
+            "U+1F376"
+        ],
+        "emoji": "🍶"
+    },
+    {
+        "name": "bottle with popping cork",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#127870;"
+        ],
+        "unicode": [
+            "U+1F37E"
+        ],
+        "emoji": "🍾"
+    },
+    {
+        "name": "wine glass",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#127863;"
+        ],
+        "unicode": [
+            "U+1F377"
+        ],
+        "emoji": "🍷"
+    },
+    {
+        "name": "cocktail glass",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#127864;"
+        ],
+        "unicode": [
+            "U+1F378"
+        ],
+        "emoji": "🍸"
+    },
+    {
+        "name": "tropical drink",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#127865;"
+        ],
+        "unicode": [
+            "U+1F379"
+        ],
+        "emoji": "🍹"
+    },
+    {
+        "name": "beer mug",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#127866;"
+        ],
+        "unicode": [
+            "U+1F37A"
+        ],
+        "emoji": "🍺"
+    },
+    {
+        "name": "clinking beer mugs",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#127867;"
+        ],
+        "unicode": [
+            "U+1F37B"
+        ],
+        "emoji": "🍻"
+    },
+    {
+        "name": "clinking glasses",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#129346;"
+        ],
+        "unicode": [
+            "U+1F942"
+        ],
+        "emoji": "🥂"
+    },
+    {
+        "name": "tumbler glass",
+        "category": "food and drink",
+        "group": "drink",
+        "htmlCode": [
+            "&#129347;"
+        ],
+        "unicode": [
+            "U+1F943"
+        ],
+        "emoji": "🥃"
+    },
+    {
+        "name": "fork and knife with plate",
+        "category": "food and drink",
+        "group": "dishware",
+        "htmlCode": [
+            "&#127869;"
+        ],
+        "unicode": [
+            "U+1F37D"
+        ],
+        "emoji": "🍽"
+    },
+    {
+        "name": "fork and knife",
+        "category": "food and drink",
+        "group": "dishware",
+        "htmlCode": [
+            "&#127860;"
+        ],
+        "unicode": [
+            "U+1F374"
+        ],
+        "emoji": "🍴"
+    },
+    {
+        "name": "spoon",
+        "category": "food and drink",
+        "group": "dishware",
+        "htmlCode": [
+            "&#129348;"
+        ],
+        "unicode": [
+            "U+1F944"
+        ],
+        "emoji": "🥄"
+    },
+    {
+        "name": "hocho ≊ kitchen knife",
+        "category": "food and drink",
+        "group": "dishware",
+        "htmlCode": [
+            "&#128298;"
+        ],
+        "unicode": [
+            "U+1F52A"
+        ],
+        "emoji": "🔪"
+    },
+    {
+        "name": "amphora",
+        "category": "food and drink",
+        "group": "dishware",
+        "htmlCode": [
+            "&#127994;"
+        ],
+        "unicode": [
+            "U+1F3FA"
+        ],
+        "emoji": "🏺"
+    }
+]
