@@ -1,3 +1,7 @@
+-- https://sqlbolt.com/lesson/select_queries_review
+-- LESSON 5
+
+
 --SELECT * FROM north_american_cities;
 
 --SELECT City, Population 
