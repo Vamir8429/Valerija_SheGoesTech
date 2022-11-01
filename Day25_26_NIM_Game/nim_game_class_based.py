@@ -11,10 +11,10 @@
 # with class based approach
 # functions are called methods and live inside the class
 
-# TODO we could use more classes to store data about the players for one
-# we could have a class to manage database interactions
+# TODO have a class to manage database interactions
 
 import random
+
 # we could have created a general Player class
 
 # for now we will add a ComputerPlayer class
@@ -22,19 +22,66 @@ class ComputerPlayer:
     # constructor
 
 
-    def __init__(self, name):
+    def __init__(self, name, level=2):
         self.name = name
+        self.level = level # how smart is our computer player?
+
+    # i am using _ for our strategy methods
+    # because we do not want to call them directly
+    # we will call them from get_move method !
+    # technically we could call them directly from outside the class
+    # single _ is a convention to indicate that a method is private
+    # if we really wanted to hide our methods we could use double __
+
+    def _fixed_strategy(self):
+        return 2 # really bad strategy
+
+    def _random_strategy(self,min_remove, max_remove):
+        return random.randint(min_remove, max_remove)
+
+    def _smart_strategy(self, match_count, min_remove, max_remove):
+        # https://en.wikipedia.org/wiki/Nim
+        # so if we have one match left we can remove it and we lose
+        # if we have two matches left we can remove one and we win!
+        # if we have three matches left we can remove two and we win!
+        # if we have four matches left we can remove three and we win!
+
+        # so we will use module/remainder operator to check if we have a winning move
+        # if we have a winning move we will take it
+        # if we do not have a winning move we will take a random move
+        reminder = match_count % (max_remove + 1)
+                # let's refactor our strategy using match syntax in Python 3.10
+        match reminder:
+            case 0: # we win
+                return max_remove # 3
+            case 1: # we lose if we remove one match
+                return random.randint(min_remove, max_remove)
+            case 2: # we win
+                return 1 # so opponent will be left with one match
+            case 3: # we win
+                return 2 # so opponent will be left with one match again
+            # default case, here we do not need it because we covered all cases
+            # case _: 
+            #     return None # return someting in default case
+        # match syntax is very useful for pattern matching
+        # https://docs.python.org/3.10/whatsnew/3.10.html#pep-634-structural-pattern-matching
+        # tutorial on pattern matching
+        # https://realpython.com/python-3-10-new-features/#structural-pattern-matching-with-match
 
     # we will add a method to get the number of matches to remove
     # for now we will just return a random number
     def get_move(self, match_count, min_remove, max_remove):
-        # this is a very random computer player :) does not care about match_count...
-        # TODO come up with a better strategy for the computer player
-        # hint there is a winning strategy for nim 
-        # in case you are interested in learning more about nim
-        # https://en.wikipedia.org/wiki/Nim
-        # if computer is losing it should try to make a random move to confuse the player
-        return random.randint(min_remove, max_remove)
+        match self.level:
+            case 1:
+                return self._fixed_strategy()
+            case 2:
+                return self._random_strategy(min_remove, max_remove)
+            case 3:
+                return self._smart_strategy(match_count, min_remove, max_remove)
+            # I could keep adding levels and strategies
+        # so match syntax is just like using if elif else, but it is more readable
+        # it is also more efficient because it does not evaluate all conditions
+        # also it is more flexible because we can match on more than just numbers
 
 
 class HumanPlayer:
@@ -42,15 +89,9 @@ class HumanPlayer:
         self.name = name
     
     def get_move(self, match_count, min_remove, max_remove):
-                # notice we immediately cast to integer
-        # TODO handle errors - it is very typical to add TODOS when writing code
-        # so we enter an infinite loop
-        # forcing the user to enter a valid input
-        # we could also offer an option to quit
         while True:
             try:
                 removed_matches = int(input("How many matches do you want to remove? "))
-                # TODO get rid of magic numbers
                 if removed_matches >= min_remove and removed_matches <= max_remove:
                     return removed_matches
                 else:
@@ -128,23 +169,35 @@ class NimGame:
 
         self.print_winner()
 
+
+def return_players(default_computer_name="Alpha NIM"):
+    # we will use a function to return the players
+    # we will use a while loop to keep asking for input until we get a valid input
+    while True:
+        player_a_name = input("Enter player A name: ")
+        player_b_name = input("Enter player B name or enter 'computer' for computer player: ")
+        if player_a_name == player_b_name:
+            print("Players must have different names")
+        else:
+            break
+    # we will use a tuple to return multiple values
+    if player_b_name == "computer":
+        # TODO add prompt for computer level - Homework for Thursday
+        return (HumanPlayer(player_a_name), ComputerPlayer(default_computer_name))
+    else:
+        return (HumanPlayer(player_a_name), HumanPlayer(player_b_name))
+
 # main guard - our main entry point
 if __name__ == "__main__":
     # we create an instance (object) of the class
-    # we call the constructor
-    # we pass the arguments to the constructor
-    # game = NimGame(21, True) # those are the defaults so we don't need to pass them
-    # TODO create players
-    # player_a = HumanPlayer("Valdis")
-    # player_b = HumanPlayer("Vitautas")
-
-    player_a = HumanPlayer("Valdis")
-    player_b = ComputerPlayer("Alpha Nim") # Google made AlphaGo and AlphaZero for chess and Go
-
-    game = NimGame(player_a=player_a, player_b=player_b) # using default values
+    # TODO read settings from a file such as match count, player names, etc.
+    player_a, player_b = return_players() # so we can have a human vs human or human vs computer
+    # in other words PvP or PvC - in gamer terms
+    game = NimGame(player_a=player_a, player_b=player_b,match_count=21) # using default values
     game.play()
     # we could clean up by using del game
     # but python will clean up for us since we are closing the program anyway
+    # TODO add multiple game functionality - Homework for Thursday
 
 # so for medium size application functions are a good choice
 # for large applications classes are a good choice
