@@ -130,7 +130,13 @@ class App(tk.Tk):
         # add the about menu to the menu bar
         self.menu.add_cascade(label="About", menu=self.about_menu) # this was under hierarchy under menu
 
-
+    # TODO add a method to open a file for now just the default file
+    # file contents should be displayed in the textview
+def open_text(self):
+    text_file = open("default.txt", "r")
+    content = text_file.read()
+    self.textview.insert(content)
+    text_file.close()
 
 # finally add a main function
 def main():
