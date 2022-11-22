@@ -36,4 +36,5 @@ df = pd.DataFrame(stock_data)
 
 model_logistic_regression(df)
 
-#OUTPUT 0.530811636846621
+#OUTPUT with sp500_index.json
+# 0.530811636846621
